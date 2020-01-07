@@ -89,9 +89,9 @@ define({
   "bitlyKey": "R_b8a169f3a8b978b9697f64613bf1db6d",
   "elevationDraw": true, // include draw tool
   // Profile Chart Colors
-  "axisFontColor": "#fff", // white
-  "titleFontColor": "#fff", // white
-  "axisMajorTickColor": "#fff", // white
+  "axisFontColor": "#666", // white //papasote
+  "titleFontColor": "#666", // white
+  "axisMajorTickColor": "#666", // white
   "elevationLineColor": "#f2f2f2", // white
   "elevationBottomColor": "#696969", //gray
   "elevationTopColor": "#8C8C8C", //gray

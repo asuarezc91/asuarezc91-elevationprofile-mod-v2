@@ -113,8 +113,6 @@ define([
           this.reportError(error);
         }));
 
-
-
       } else {
         var error = new Error("Main:: Config is not defined");
         this.reportError(error);
@@ -122,7 +120,15 @@ define([
         def.reject(error);
         promise = def.promise;
       }
+      var tittle = document.getElementById("elevTitle");
+      console.log(tittle);
+      tittle.setAttribute("style", "display : none;");
       return promise;
+
+
+
+
+
     },
     reportError: function (error) {
       // remove loading class from body
@@ -227,8 +233,33 @@ define([
         this.elevationWidget.generateProfile(result.geometry);
         on.once(this.map, "click", lang.hitch(this, function () {
           this.elevationWidget.clearProfileChart();
+
         }));
       }));
+
+      //man
+
+      // var test = document.querySelectorAll('[fill="rgb(0, 0, 0)"]');
+      // console.log(test);
+      // var jquery = $('[fill="url(#dojoxUnique21)"]');
+      // console.log(jquery);
+
+      // var test9 = document.querySelectorAll('[fill="url(#dojoxUnique9)"]');
+      // console.log(test9);
+      // var jquery = $('[fill="url(#dojoxUnique9)"]');
+      // console.log(jquery);
+      // var jquery2 = $('[fill="rgb(0, 0, 0)"]');
+      // console.log(jquery2[0]);
+      // var man = jquery2[0];
+      // $('[fill="rgb(0, 0, 0)"]').css("display", "none");
+
+
+
+      var jquery3 = $('[shape-rendering="crispEdges"]');
+      console.log(jquery3);
+
+
+
     },
     _setupAppTools: function () {
       // setup the draw tool
@@ -627,6 +658,7 @@ define([
         }));
       }));
 
+
     },
     _updateTheme: function () {
       var bgColor = this.config.background;
@@ -698,6 +730,10 @@ define([
           domStyle.set(element, "visibility", visibility === "hidden" ? "visible" : "hidden");
         }
       }).play();
+      //papasote
+      var jquery3 = $('[fill="url(#dojoxUnique9)"]');
+      console.log(jquery3);
+
     },
     _setupSplashModal: function () {
       // Setup the modal overlay if enabled
@@ -749,5 +785,9 @@ define([
       return current;
     }
 
+
   });
+
+
+
 });

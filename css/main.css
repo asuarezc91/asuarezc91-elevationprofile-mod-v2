@@ -21,7 +21,7 @@ g#mapDiv_graphics_layer path {
 
 #elevInfo {
   padding: 5px 5px 5px 10px;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 #toggle {
@@ -35,6 +35,49 @@ g#mapDiv_graphics_layer path {
   left: 20px;
   top: auto;
   right: auto;
+}
+
+#dojoxUnique9 {
+  display: none !important;
+}
+
+rect {
+  display: none !important;
+}
+
+text {
+  display: none !important;
+}
+
+path {
+  display: none !important;
+}
+
+/* g{
+  display: none !important;
+} */
+
+.esriElevationProfileChartNode {
+  position: relative;
+  right: 40px;
+}
+
+.testButton1 {
+  position: absolute;
+  left: 80px;
+}
+
+.testButton2{
+  position: absolute;
+  left: 120px;
+}
+ 
+#elevInfo {
+  display: none;
+}
+
+.esriElevationProfileDirectionButton {
+  display: none !important;
 }
 
 .BasemapToggle .toggleButton {
@@ -140,16 +183,19 @@ g#mapDiv_graphics_layer path {
 /*Icon Fonts*/
 
 @font-face {
-  font-family: 'elevfonts';
-  src: url('../fonts/tool-icons.eot?o2bzxw');
-  src: url('../fonts/tool-icons.eot?o2bzxw#iefix') format('embedded-opentype'), url('../fonts/tool-icons.ttf?o2bzxw') format('truetype'), url('../fonts/tool-icons.woff?o2bzxw') format('woff'), url('../fonts/tool-icons.svg?o2bzxw#tool-icons') format('svg');
+  font-family: "elevfonts";
+  src: url("../fonts/tool-icons.eot?o2bzxw");
+  src: url("../fonts/tool-icons.eot?o2bzxw#iefix") format("embedded-opentype"),
+    url("../fonts/tool-icons.ttf?o2bzxw") format("truetype"),
+    url("../fonts/tool-icons.woff?o2bzxw") format("woff"),
+    url("../fonts/tool-icons.svg?o2bzxw#tool-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"],
 [class*=" icon-"] {
-  font-family: 'elevfonts';
+  font-family: "elevfonts";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -266,7 +312,7 @@ elevation profile widget */
 
 .esriElevationProfile .esriElevationProfileDirectionButton:before {
   content: "\e900";
-  font-family: "elevfonts"
+  font-family: "elevfonts";
 }
 
 .esriElevationProfile .esriElevationProfileDirectionForward,
@@ -283,7 +329,7 @@ elevation profile widget */
 
 /*standby widget updates*/
 
-#dojox_widget_Standby_0>div:nth-child(1) {
+#dojox_widget_Standby_0 > div:nth-child(1) {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
@@ -343,11 +389,11 @@ elevation profile widget */
   opacity: 1;
   visibility: visible;
   width: 40%;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, .25);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
-  transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
   z-index: 99;
 }
 
@@ -395,7 +441,7 @@ elevation profile widget */
 
 #closeOverlay {
   line-height: normal;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   outline: none;
   font-size: 1em;
   font-weight: 600;
@@ -617,7 +663,7 @@ that appear below the zoom slider */
 }
 
 .esriBasemapGallerySelectedNode a:after {
-  font-family: 'elevfonts';
+  font-family: "elevfonts";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -685,14 +731,14 @@ that appear below the zoom slider */
 
 .esriSimpleSlider div {
   font-size: 22px;
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
   line-height: 22px;
 }
 
 .esriSimpleSlider,
 .arcgisSearch .searchBtn {
   font-size: 22px;
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
   line-height: 22px;
   border: 1px solid #999;
   border-radius: 1px;
